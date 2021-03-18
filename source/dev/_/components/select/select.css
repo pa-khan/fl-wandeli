@@ -1,0 +1,9 @@
+.select {
+  z-index: 5;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.select select {
+  display: none;
+}

@@ -1,0 +1,11 @@
+.tog-head {
+  cursor: pointer;
+}
+.tog-body {
+  max-height: 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.tog.--show .tog-body {
+  height: auto;
+}

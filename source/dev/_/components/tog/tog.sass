@@ -1,0 +1,13 @@
+@import ../../sys/sass/vars
+
+.tog
+	&-head
+		cursor: pointer
+	&-body
+		max-height: 0
+		transition: .3s
+		overflow: hidden
+	&.--show
+		.tog
+			&-body
+				height: auto

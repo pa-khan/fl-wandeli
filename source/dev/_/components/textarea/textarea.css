@@ -1,0 +1,12 @@
+.textarea__wrap {
+  position: relative;
+}
+.textarea__area {
+  width: 100%;
+  font-family: "Tahoma", sans-serif;
+  color: #000000;
+  resize: none;
+}
+.textarea__area::placeholder {
+  color: #000000;
+}

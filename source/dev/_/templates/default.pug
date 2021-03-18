@@ -1,0 +1,37 @@
+include ../sys/pug/vars
+doctype html
+block vars
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		//- link(rel="apple-touch-icon" sizes="180x180" href="_/uploads/favicon/apple-touch-icon.png")
+		//- link(rel="icon" type="image/png" sizes="32x32" href="_/uploads/favicon/favicon-32x32.png")
+		//- link(rel="icon" type="image/png" sizes="16x16" href="_/uploads/favicon/favicon-16x16.png")
+		//- link(rel="manifest" href="_/uploads/favicon/site.webmanifest")
+		//- link(rel="mask-icon" href="_/uploads/favicon/safari-pinned-tab.svg" color="#5bbad5")
+		//- meta(name="msapplication-TileColor" content="#da532c")
+		//- meta(name="theme-color" content="#ffffff")
+		title=title
+	body
+		.wrap
+			link(rel="stylesheet" href="_/sys/css/style.css" + version)
+			script(src="_/sys/js/common.js" + version)
+
+			+style('header', 'blocks')
+			include ../blocks/header/header
+			+script('header', 'blocks')
+			
+			main.main
+				block content
+
+			+style('footer', 'blocks')
+			include ../blocks/footer/footer
+			
+			+script('input', 'components')
+			+script('check', 'components')
+			+script('select', 'components')
+			+script('tabs', 'components')
+			+script('popup', 'components')
+			+script('slider', 'components')
+			+script('tog', 'components')
