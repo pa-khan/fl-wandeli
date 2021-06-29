@@ -1,0 +1,82 @@
+extends ../../templates/default
+block vars
+	-
+		title = ""
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	include ../../parts/catalog
+
+	.tech
+		.case
+			.tech__title.h1 #[i #[strong #[u ]]]
+			.tech__list.row
+				.tech__item.bgw
+					.tech__count 01
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 02
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 03
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 04
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 05
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 06
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 07
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 08
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 09
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 10
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 11
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 12
+					.tech__name
+					.tech__img(src="" alt="")
+				.tech__item.bgw
+					.tech__count 12
+					.tech__name
+					.tech__img(src="" alt="")
+
+	.docs
+		.case
+			.docs__title.h1 #[i #[strong #[u ]]]
+			.docs__list
+				.docs__item.row
+					.docs__img
+						img(src="" alt="")
+					.docs__name
+				.docs__item.row
+					.docs__img
+						img(src="" alt="")
+					.docs__name
+
+	include ../../parts/consult

@@ -1,0 +1,40 @@
+extends ../../templates/default
+block vars
+	-
+		title = ""
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.pa
+		.case
+			.pa__wrap.row
+				.pa__data
+					.pa__title.h1 #[strong #[u]]
+					.pa__list
+						.pa__item.pa__input.input.--md.--b-black.--black.--name.--required
+							.input__title
+							.input__wrap
+								input.input__area(type="text" name="name")
+						.pa__item.pa__input.input.--md.--b-black.--black.--phone.--required
+							.input__title
+							.input__wrap
+								input.input__area(type="text" name="phone" placeholder="900 100 10 00")
+						.pa__item.pa__input.input.--md.--b-black.--black.--email.--required
+							.input__title
+							.input__wrap
+								input.input__area(type="text" name="email")
+						.pa__item.pa__input.input.--md.--b-black.--black.--date.--required
+							.input__title
+							.input__wrap
+								input.input__area(type="text" name="date")
+						button.pa__item.pa__btn.btn.--md.--bg-black 
+				.pa__loyalty.loyalty
+					.loyalty__title.h1 #[strong #[u]]
+					.loyalty__icon
+						img(src="" alt="")
+					.loyalty__desc
+					.loyalty__value
+					.pa__exit #[a(href="") ]
+

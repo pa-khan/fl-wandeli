@@ -1,5 +1,97 @@
 include ../../sys/pug/vars
 
-footer.footer
+footer.footer.bgw
 	.case
-		
+		.footer__wrap
+			.footer__nav
+				ul
+					li
+						a(href="")
+			a.footer__logo.logo(href="")
+				img(src="" alt="")
+			.footer__copy
+			.footer__policy #[a(href="") ]
+			.footer__dev #[a(href="" target="_blank") ]
+
+	.footer__bg.bg
+		img(src="" alt="")
+
+.modals
+	.modal.--sm.--bg-white#modal-consult
+		.modal__close
+		.modal__inner
+			.modal__title.h2 #[strong #[u ]]
+			.modal__wrap
+				.modal__item.modal__input.input.--md.--b-black.--phone.--required
+					.input__title
+					.input__wrap
+						input.input__area(type="tel" name="phone")
+				.modal__item.modal__input.input.--md.--b-black.--name.--required
+					.input__title
+					.input__wrap
+						input.input__area(type="text" name="name")
+				.modal__item.modal__input.input.--md.--b-black--email.--required
+					.input__title
+					.input__wrap
+						input.input__area(type="email" name="email")
+				button.modal__item.modal__btn.btn.--md.--bg-blue 
+
+	.modal.--sm.--bg-white#modal-auth
+		.modal__close
+		.modal__inner
+			.modal__title.h2 #[strong #[u ]]
+			.modal__wrap
+				.modal__auth.auth
+					.auth__list
+						.auth__item
+							.auth__item.modal__input.input.--md.--b-black.--phone.--required
+								.input__title
+								.input__wrap
+									input.input__area(type="tel" name="phone")
+							.auth__captcha
+							button.auth__btn.btn.--md.--bg-blue.--next
+							.auth__link #[a(href="")]
+
+						.auth__item
+							.auth__item.modal__input.input.--md.--b-black.--code.--required
+								.input__title
+								.input__wrap
+									input.input__area(type="tel" name="code")
+							.auth__timer
+							.auth__resend #[span ]
+							button.auth__btn.btn.--md.--bg-blue.--submit
+
+	.modal.--sm.--bg-white#modal-reg
+		.modal__close
+		.modal__inner
+			.modal__title.h2 #[strong #[u ]]
+			.modal__wrap
+				.modal__item.modal__input.input.--md.--b-black.--phone.--required
+					.input__title
+					.input__wrap
+						input.input__area(type="tel" name="phone")
+				.modal__item.modal__input.input.--md.--b-black.--name.--required
+					.input__title
+					.input__wrap
+						input.input__area(type="text" name="name")
+				.modal__item.modal__input.input.--md.--b-black--email.--required
+					.input__title
+					.input__wrap
+						input.input__area(type="email" name="email")
+				.modal__item.modal__input.input.--md.--b-black.--date.--required
+					.input__title
+					.input__wrap
+						input.input__area(type="text" name="date")
+				.modal__captcha
+				button.modal__item.modal__btn.btn.--md.--bg-blue 
+				.modal__link #[a(href="")]
+
+	.modal.--sm.--bg-white#modal-thanks
+		.modal__close
+		.modal__inner
+			.modal__title.h2 #[strong #[u ]]
+			.modal__wrap
+				.thanks
+					.thanks__icon
+					.thanks__title
+					.thanks__btn.btn.--md.--bg-blue

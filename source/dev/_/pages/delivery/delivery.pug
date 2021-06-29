@@ -1,0 +1,83 @@
+extends ../../templates/default
+block vars
+	-
+		title = ""
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.deli-intro.bgw
+		.case
+			.deli-intro__wrap
+				.deli-intro__content
+					.deli-intro__title.h1 #[strong #[u ]]
+					.deli-intro__text
+						p #[strong #[u ]]
+						p #[strong ]
+				.deli-intro__img
+					img(src="" alt="")
+			.deli-intro__desc
+				p #[strong ]
+				p.--black #[strong #[u ]]
+
+		.desc__bg.bg
+			img(src="" alt="")
+
+	.pek
+		.case
+			.pek__wrap.row
+				.pek__logo
+					img(src="" alt="")
+				.pek__text
+					p #[u ] #[u ]
+
+	.desc.bgw
+		.case
+			.desc__list
+				.desc__item
+					p #[strong ]
+				.desc__item
+					p #[strong ]
+		.desc__bg.bg
+			img(src="" alt="")
+
+	.steps
+		.case
+			.steps__title.h1 #[strong #[u ]]
+			.steps__list
+				.steps__item
+					.steps__count 01
+					.steps__text
+				.steps__item
+					.steps__count 02
+					.steps__text
+				.steps__item
+					.steps__count 03
+					.steps__text
+				.steps__item
+					.steps__count 04
+					.steps__text
+
+	.delivery
+		.case
+			.delivery__title.h1 #[strong #[u ]]
+			.delivery__list
+				.delivery__item.row
+					.delivery__icon
+						img(src="" alt="")
+					.delivery__content
+						.delivery__name
+						.delivery__text
+				.delivery__item.row
+					.delivery__icon
+						img(src="" alt="")
+					.delivery__content
+						.delivery__name
+						.delivery__text
+				.delivery__item.row
+					.delivery__icon
+						img(src="" alt="")
+					.delivery__content
+						.delivery__name
+						.delivery__text

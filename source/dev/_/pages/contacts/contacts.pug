@@ -1,0 +1,40 @@
+extends ../../templates/default
+block vars
+	-
+		title = ""
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.contacts
+		.case
+			.contacts__title.h1 #[strong #[u ]]
+			.contacts__wrap.row
+				.contacts__list
+					.contacts__item
+						.contacts__icon
+							img(src="" alt="")
+						.contacts__text
+							p #[a(href="tel:") ]
+							p #[a(href="tel:") ]
+					.contacts__item
+						.contacts__icon
+							img(src="" alt="")
+						.contacts__text
+							p #[a(href="mailto:") ]
+					.contacts__item
+						.contacts__icon
+							img(src="" alt="")
+						.contacts__text
+							p
+				.contacts__content
+					h3
+					p #[strong ]
+					p #[strong ]
+					p #[strong ]
+
+	.map
+		.map__area(data-lng="" data-lnt="")
+
+	include ../../parts/consult 

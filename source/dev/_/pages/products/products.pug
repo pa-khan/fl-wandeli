@@ -1,0 +1,75 @@
+extends ../../templates/default
+block vars
+	-
+		title = ""
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.products
+		.case
+			.products__list
+				mixin product
+					.products__item.product
+						.product__name.h1 #[strong #[u ]]
+						.product__wrap
+							.product__imgs.imgs
+								.imgs__list
+									.imgs__list-list
+										.imgs__list-item
+											img(src="" alt="")
+										.imgs__list-item
+											img(src="" alt="")
+										.imgs__list-item
+											img(src="" alt="")
+										.imgs__list-item
+											img(src="" alt="")
+								.imgs__thumbs
+									.imgs__thumbs-list
+										.imgs__thumbs-item
+											img(src="" alt="")
+										.imgs__thumbs-item
+											img(src="" alt="")
+										.imgs__thumbs-item
+											img(src="" alt="")
+										.imgs__thumbs-item
+											img(src="" alt="")
+
+							.product__content
+								.product__data.data
+									.data__list
+										.data__item
+											.data__col
+											.data__col
+										.data__item
+											.data__col
+											.data__col
+										.data__item
+											.data__col
+											.data__col
+										.data__item
+											.data__col
+											.data__col
+										.data__item
+											.data__col
+											.data__col
+										.data__item
+											.data__col
+											.data__col
+										.data__item
+											.data__col
+											.data__col
+										.data__item
+											.data__col
+											.data__col
+
+								.product__controls.row
+									.product__price
+										.product__price-title
+										.product__price-value
+									a.product__btn.btn.--md.--bg-blue(href="")
+				
+				+product
+				+product
+				+product
