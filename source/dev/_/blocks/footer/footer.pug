@@ -6,12 +6,18 @@ footer.footer.bgw
 			.footer__nav
 				ul
 					li
-						a(href="")
+						a(href="") Главная
+					li
+						a(href="") Подбор станка
+					li
+						a(href="") Доставка и оплата
+					li
+						a(href="") Контакты
 			a.footer__logo.logo(href="")
 				img(src="" alt="")
-			.footer__copy
-			.footer__policy #[a(href="") ]
-			.footer__dev #[a(href="" target="_blank") ]
+			.footer__copy Copyright © ООО «Фортеццо» 2019-2021 Копирование запрещено 
+			.footer__policy #[a(href="") Политика конфиденциальности]
+			.footer__dev #[a(href="" target="_blank") Разработка сайта      ]
 
 	.footer__bg.bg
 		img(src="" alt="")
@@ -20,78 +26,98 @@ footer.footer.bgw
 	.modal.--sm.--bg-white#modal-consult
 		.modal__close
 		.modal__inner
-			.modal__title.h2 #[strong #[u ]]
+			.modal__title.h2 #[strong #[u Заявка на консультацию]]
 			.modal__wrap
 				.modal__item.modal__input.input.--md.--b-black.--phone.--required
-					.input__title
+					.input__title Ваш номер телефона
 					.input__wrap
 						input.input__area(type="tel" name="phone")
 				.modal__item.modal__input.input.--md.--b-black.--name.--required
-					.input__title
+					.input__title Ваше имя
 					.input__wrap
 						input.input__area(type="text" name="name")
-				.modal__item.modal__input.input.--md.--b-black--email.--required
-					.input__title
+				.modal__item.modal__input.input.--md.--b-black.--email.--required
+					.input__title Ваша электронная почта
 					.input__wrap
 						input.input__area(type="email" name="email")
-				button.modal__item.modal__btn.btn.--md.--bg-blue 
+				button.modal__item.modal__btn.btn.--md.--bg-blue Отправить
+
+	.modal.--sm.--bg-white#modal-order
+		.modal__close
+		.modal__inner
+			.modal__title.h2 #[strong #[u Оформление заказа]]
+			.modal__wrap
+				.modal__item.modal__input.input.--md.--b-black.--phone.--required
+					.input__title Ваш номер телефона
+					.input__wrap
+						input.input__area(type="tel" name="phone")
+				.modal__item.modal__input.input.--md.--b-black.--name.--required
+					.input__title Ваше имя
+					.input__wrap
+						input.input__area(type="text" name="name")
+				.modal__item.modal__input.input.--md.--b-black.--email.--required
+					.input__title Ваша электронная почта
+					.input__wrap
+						input.input__area(type="email" name="email")
+				button.modal__item.modal__btn.btn.--md.--bg-blue Отправить
+				.modal__desc Наш менеджер перезвонит для уточнения деталей
 
 	.modal.--sm.--bg-white#modal-auth
 		.modal__close
 		.modal__inner
-			.modal__title.h2 #[strong #[u ]]
+			.modal__title.h2 #[strong #[u Вход в личный кабинет]]
 			.modal__wrap
 				.modal__auth.auth
 					.auth__list
 						.auth__item
 							.auth__item.modal__input.input.--md.--b-black.--phone.--required
-								.input__title
+								.input__title Ваш номер телефона
 								.input__wrap
 									input.input__area(type="tel" name="phone")
 							.auth__captcha
-							button.auth__btn.btn.--md.--bg-blue.--next
-							.auth__link #[a(href="")]
+							button.auth__btn.btn.--md.--bg-blue.--next Выслать код
+							.auth__link Нет аккаунта? #[a(href="") Зарегестрируйтесь]
 
 						.auth__item
 							.auth__item.modal__input.input.--md.--b-black.--code.--required
-								.input__title
+								.input__title Введите код
 								.input__wrap
 									input.input__area(type="tel" name="code")
-							.auth__timer
-							.auth__resend #[span ]
-							button.auth__btn.btn.--md.--bg-blue.--submit
+							.auth__timer Времени осталось #[var 2:59]
+							.auth__resend #[span Отправить код повторно]
+							button.auth__btn.btn.--md.--bg-blue.--submit Войти
 
 	.modal.--sm.--bg-white#modal-reg
 		.modal__close
 		.modal__inner
-			.modal__title.h2 #[strong #[u ]]
+			.modal__title.h2 #[strong #[u Регистрация]]
 			.modal__wrap
 				.modal__item.modal__input.input.--md.--b-black.--phone.--required
-					.input__title
+					.input__title Ваш номер телефона
 					.input__wrap
 						input.input__area(type="tel" name="phone")
 				.modal__item.modal__input.input.--md.--b-black.--name.--required
-					.input__title
+					.input__title Ваше имя
 					.input__wrap
 						input.input__area(type="text" name="name")
-				.modal__item.modal__input.input.--md.--b-black--email.--required
-					.input__title
+				.modal__item.modal__input.input.--md.--b-black.--email.--required
+					.input__title Ваша электронная почта
 					.input__wrap
 						input.input__area(type="email" name="email")
 				.modal__item.modal__input.input.--md.--b-black.--date.--required
-					.input__title
+					.input__title Дата рождения
 					.input__wrap
 						input.input__area(type="text" name="date")
 				.modal__captcha
-				button.modal__item.modal__btn.btn.--md.--bg-blue 
-				.modal__link #[a(href="")]
+				button.modal__item.modal__btn.btn.--md.--bg-blue Выслать код
+				.modal__link #[a(href="") Вернуться ко входу]
 
 	.modal.--sm.--bg-white#modal-thanks
 		.modal__close
 		.modal__inner
-			.modal__title.h2 #[strong #[u ]]
+			.modal__title.h2 #[strong #[u Заявка принята]]
 			.modal__wrap
 				.thanks
 					.thanks__icon
-					.thanks__title
-					.thanks__btn.btn.--md.--bg-blue
+					.thanks__title Спасибо за заявку, мы вам перезвоним!
+					.thanks__btn.btn.--md.--bg-blue На главную
