@@ -9,9 +9,9 @@ block vars
 block content
 	.contacts
 		.case
-			.contacts__title.h1 #[i Контакты и #[strong #[u обратная связь]]]
+			.contacts__title.h1(class='animate__animated animate__fadeInUp wow') #[i Контакты и #[strong #[u обратная связь]]]
 			.contacts__wrap.row
-				.contacts__list
+				.contacts__list(class='animate__animated animate__fadeInLeft wow')
 					.contacts__item
 						.contacts__icon
 							img(src="_/uploads/phone.svg" alt="")
@@ -28,13 +28,13 @@ block content
 							img(src="_/uploads/placeholder.svg" alt="")
 						.contacts__text
 							p г. Санкт-Петербург, ул. Митрофаньевское шоссе, д.29, БЦ "Радуга", офис 107.
-				.contacts__content
+				.contacts__content(class='animate__animated animate__fadeInRight wow')
 					h3 ООО "ФОРТЕЦЦО"
 					p #[strong ИНН] 7805741847
 					p #[strong ОГРН] 1197847020964
 					p #[strong Юр. Адрес] 198096, #[br.br-hidden]САНКТ-ПЕТЕРБУРГ Г, УЛ КРОНШТАДТСКАЯ, дом 24, корп. ЛИТ А, П6-Н К2
 
-	.map
+	.map(class='animate__animated animate__fadeInUp wow')
 		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
 		.map__area(data-lng="59.890442" data-lnt="30.301603")
 

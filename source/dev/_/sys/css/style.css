@@ -1,5 +1,6 @@
 @import "../libs/fancybox/dist/jquery.fancybox.css";
 @import "../libs/air-datepicker/dist/css/datepicker.min.css";
+@import "../libs/animate.css/animate.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 *, :before, :after {
   padding: 0;
