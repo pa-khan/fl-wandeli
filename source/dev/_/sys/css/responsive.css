@@ -978,6 +978,9 @@
     font-size: 14px;
     line-height: 17px;
   }
+  .whom__name:before {
+    height: 2px;
+  }
   .whom__icon {
     margin-left: 28px;
   }

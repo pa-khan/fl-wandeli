@@ -757,7 +757,6 @@ path, circle, rect, line {
   padding-bottom: 100px;
 }
 .advantages__name {
-  opacity: 0.2;
   z-index: -1;
   position: absolute;
   top: -90px;
@@ -768,6 +767,9 @@ path, circle, rect, line {
   color: #fff;
   white-space: nowrap;
   text-shadow: 0 -2px 0 #179BD7, 0 -2px 0 #179BD7, 0 2px 0 #179BD7, 0 2px 0 #179BD7, -2px 0 0 #179BD7, 2px 0 0 #179BD7, -2px 0 0 #179BD7, 2px 0 0 #179BD7, -1px -2px 0 #179BD7, 1px -2px 0 #179BD7, -1px 2px 0 #179BD7, 1px 2px 0 #179BD7, -2px -1px 0 #179BD7, 2px -1px 0 #179BD7, -2px 1px 0 #179BD7, 2px 1px 0 #179BD7, -2px -2px 0 #179BD7, 2px -2px 0 #179BD7, -2px 2px 0 #179BD7, 2px 2px 0 #179BD7, -2px -2px 0 #179BD7, 2px -2px 0 #179BD7, -2px 2px 0 #179BD7, 2px 2px 0 #179BD7;
+}
+.advantages__name span {
+  opacity: 0.2;
 }
 .advantages__title {
   text-align: center;
@@ -858,6 +860,15 @@ path, circle, rect, line {
   position: relative;
   z-index: 1;
   font-weight: 700;
+}
+.whom__name:before {
+  content: "";
+  width: 70%;
+  height: 3px;
+  bottom: -6px;
+  left: 0;
+  position: absolute;
+  background-color: #179BD7;
 }
 .whom__icon {
   position: relative;
