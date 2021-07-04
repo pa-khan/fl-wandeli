@@ -1,7 +1,8 @@
 extends ../../templates/default
 block vars
 	-
-		title = ""
+		title = "Личный кабинет"
+		footerClass = '--no-bg'
 		breadcrumbs = [
 			['Главная', 'index.html'],
 			[title]
@@ -12,7 +13,7 @@ block content
 			.pa__wrap.row
 				.pa__data
 					.pa__title.h1 #[strong #[u Мои данные]]
-					.pa__list
+					.pa__list.row
 						.pa__item.pa__input.input.--md.--b-black.--black.--name.--required
 							.input__title Ваше имя
 							.input__wrap
@@ -20,6 +21,9 @@ block content
 						.pa__item.pa__input.input.--md.--b-black.--black.--phone.--required
 							.input__title Ваш номер телефона
 							.input__wrap
+								.input__icon
+									<svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0.166504V4.3887V8.61093V12.8331H19V8.61093V4.3887V0.166504H0Z" fill="#F0F0F0"/><path d="M19 0.166748H0V12.8336H19V0.166748Z" fill="#0052B4"/><path d="M19 0.166748H0V4.38887H19V0.166748Z" fill="#F0F0F0"/><path d="M19 8.61121H0V12.8333H19V8.61121Z" fill="#D80027"/></svg>
+								.input__desc +7
 								input.input__area(type="text" name="phone" placeholder="900 100 10 00")
 						.pa__item.pa__input.input.--md.--b-black.--black.--email.--required
 							.input__title Ваша электронная почта
@@ -28,13 +32,17 @@ block content
 						.pa__item.pa__input.input.--md.--b-black.--black.--date.--required
 							.input__title Дата рождения
 							.input__wrap
+								.input__icon
+									img(src="_/uploads/calendar.png" alt="")
 								input.input__area(type="text" name="date")
-						button.pa__item.pa__btn.btn.--md.--bg-black Сохранить
+						button.pa__item.pa__btn.btn.--md.--bg-blue
+							.btn__inner
+								.btn__lines #[div]#[div]#[div]
+								.btn__text Сохранить
 				.pa__loyalty.loyalty
 					.loyalty__title.h1 #[strong #[u Баллы лояльности]]
 					.loyalty__icon
 						img(src="_/uploads/ruble.svg" alt="")
 					.loyalty__desc На вашем счету:
-					.loyalty__value 0 баллов = 0 Р
+					.loyalty__value.h2 0 баллов = 0 Р
 					.pa__exit #[a(href="") Выйти]
-

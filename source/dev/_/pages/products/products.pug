@@ -1,40 +1,50 @@
 extends ../../templates/default
 block vars
 	-
-		title = ""
+		title = "QT"
+		footerClass = '--no-bg'
 		breadcrumbs = [
-			['Главная', 'index.html'],
+			['Подбор станка', 'catalog.html'],
 			[title]
 		]
 block content
 	.products
 		.case
+			+breadcrumbs('products__breadcrumbs')
 			.products__list
 				mixin product
 					.products__item.product
 						.product__name.h1 Электрический плиткорез Wandeli #[strong #[u QX-800]] 1550Вт Laser
-						.product__wrap
+						.product__wrap.row
 							.product__imgs.imgs
-								.imgs__list
-									.imgs__list-list
-										.imgs__list-item
-											img(src="_/uploads/" alt="")
-										.imgs__list-item
-											img(src="_/uploads/" alt="")
-										.imgs__list-item
-											img(src="_/uploads/" alt="")
-										.imgs__list-item
-											img(src="_/uploads/" alt="")
+								.imgs__only
+									.imgs__only-wrap.swiper-container
+										.imgs__only-list.swiper-wrapper
+											.imgs__only-item.swiper-slide
+												img(src="_/uploads/product.png" alt="")
+											.imgs__only-item.swiper-slide
+												img(src="_/uploads/product.png" alt="")
+											.imgs__only-item.swiper-slide
+												img(src="_/uploads/product.png" alt="")
+											.imgs__only-item.swiper-slide
+												img(src="_/uploads/product.png" alt="")
 								.imgs__thumbs
-									.imgs__thumbs-list
-										.imgs__thumbs-item
-											img(src="_/uploads/" alt="")
-										.imgs__thumbs-item
-											img(src="_/uploads/" alt="")
-										.imgs__thumbs-item
-											img(src="_/uploads/" alt="")
-										.imgs__thumbs-item
-											img(src="_/uploads/" alt="")
+									.imgs__thumbs-wrap.swiper-container
+										.imgs__thumbs-list.swiper-wrapper
+											.imgs__thumbs-item.swiper-slide
+												img(src="_/uploads/product.png" alt="")
+											.imgs__thumbs-item.swiper-slide
+												img(src="_/uploads/product.png" alt="")
+											.imgs__thumbs-item.swiper-slide
+												img(src="_/uploads/product.png" alt="")
+											.imgs__thumbs-item.swiper-slide
+												img(src="_/uploads/product.png" alt="")
+									.imgs__thumbs-arrows
+										.imgs__thumbs-arrow.--prev
+											<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.665804 13.8294L14.0162 0.479264C14.325 0.170243 14.7372 0 15.1767 0C15.6162 0 16.0284 0.170243 16.3371 0.479264L17.3203 1.46218C17.9601 2.10267 17.9601 3.14363 17.3203 3.78314L6.10966 14.9938L17.3327 26.2169C17.6415 26.5259 17.812 26.9378 17.812 27.3771C17.812 27.8168 17.6415 28.2288 17.3327 28.5381L16.3496 29.5207C16.0406 29.8298 15.6286 30 15.1891 30C14.7496 30 14.3374 29.8298 14.0286 29.5207L0.665804 16.1584C0.356293 15.8484 0.186295 15.4345 0.187271 14.9945C0.186295 14.5528 0.356293 14.1392 0.665804 13.8294Z" fill="#1C9AD7"/></svg>
+										.imgs__thumbs-arrow.--next
+											<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.3342 13.8294L3.98381 0.479264C3.67503 0.170243 3.26284 0 2.82333 0C2.38382 0 1.97163 0.170243 1.66286 0.479264L0.679692 1.46218C0.0399409 2.10267 0.0399409 3.14363 0.679692 3.78314L11.8903 14.9938L0.667253 26.2169C0.358475 26.5259 0.187988 26.9378 0.187988 27.3771C0.187988 27.8168 0.358475 28.2288 0.667253 28.5381L1.65042 29.5207C1.95944 29.8298 2.37139 30 2.81089 30C3.2504 30 3.6626 29.8298 3.97137 29.5207L17.3342 16.1584C17.6437 15.8484 17.8137 15.4345 17.8127 14.9945C17.8137 14.5528 17.6437 14.1392 17.3342 13.8294Z" fill="#1C9AD7"/></svg>
+
 
 							.product__content
 								.product__data.data
@@ -67,8 +77,11 @@ block content
 								.product__controls.row
 									.product__price
 										.product__price-title Есть в наличии
-										.product__price-value Есть в наличии
-									a.product__btn.btn.--md.--bg-blue(href="") Оформить заказ
+										.product__price-value 75 970 ₽
+									a.product__btn.btn.--md.--bg-blue(href="javascript:;" data-src="#modal-order" data-fancybox="")
+										.btn__inner
+											.btn__lines #[div]#[div]#[div]
+											.btn__text Оформить заказ
 				
 				+product
 				+product

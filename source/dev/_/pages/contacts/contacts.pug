@@ -1,7 +1,7 @@
 extends ../../templates/default
 block vars
 	-
-		title = ""
+		title = "Контакты"
 		breadcrumbs = [
 			['Главная', 'index.html'],
 			[title]
@@ -35,6 +35,7 @@ block content
 					p #[strong Юр. Адрес] 198096, САНКТ-ПЕТЕРБУРГ Г, УЛ КРОНШТАДТСКАЯ, дом 24, корп. ЛИТ А, П6-Н К2
 
 	.map
-		.map__area(data-lng="" data-lnt="")
+		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+		.map__area(data-lng="59.890442" data-lnt="30.301603")
 
 	include ../../parts/consult 

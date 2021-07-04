@@ -1,6 +1,6 @@
 include ../../sys/pug/vars
 
-footer.footer.bgw
+footer.footer.bgw(class=footerClass)
 	.case
 		.footer__wrap
 			.footer__nav
@@ -13,115 +13,139 @@ footer.footer.bgw
 						a(href="") Доставка и оплата
 					li
 						a(href="") Контакты
-			a.footer__logo.logo(href="")
+			a.footer__logo.logo(href="index.html")
 				img(src="_/uploads/logo.svg" alt="")
 			.footer__copy Copyright © ООО «Фортеццо» 2019-2021 Копирование запрещено 
 			.footer__policy #[a(href="") Политика конфиденциальности]
-			.footer__dev #[a(href="" target="_blank") Разработка сайта      ]
+			.footer__dev #[a(href="" target="_blank") Разработка сайта]
 
 	.footer__bg.bg
 		img(src="_/uploads/footer-bg.png" alt="")
 
 .modals
-	.modal.--sm.--bg-white#modal-consult
-		.modal__close
+	.modal.--sm.--bg-white.--consult#modal-consult
+		.modal__close(data-fancybox-close="")
 		.modal__inner
 			.modal__title.h2 #[strong #[u Заявка на консультацию]]
 			.modal__wrap
-				.modal__item.modal__input.input.--md.--b-black.--phone.--required
+				.modal__item.modal__input.input.--md.--b-blue.--phone.--required
 					.input__title Ваш номер телефона
 					.input__wrap
 						.input__icon
 							<svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0.166504V4.3887V8.61093V12.8331H19V8.61093V4.3887V0.166504H0Z" fill="#F0F0F0"/><path d="M19 0.166748H0V12.8336H19V0.166748Z" fill="#0052B4"/><path d="M19 0.166748H0V4.38887H19V0.166748Z" fill="#F0F0F0"/><path d="M19 8.61121H0V12.8333H19V8.61121Z" fill="#D80027"/></svg>
-						input.input__area(type="tel" name="phone")
-				.modal__item.modal__input.input.--md.--b-black.--name.--required
+						.input__desc +7
+						input.input__area(type="tel" name="phone" placeholder="900 100 10 00")
+				.modal__item.modal__input.input.--md.--b-blue.--name.--required
 					.input__title Ваше имя
 					.input__wrap
 						input.input__area(type="text" name="name")
-				.modal__item.modal__input.input.--md.--b-black.--email.--required
+				.modal__item.modal__input.input.--md.--b-blue.--email.--required
 					.input__title Ваша электронная почта
 					.input__wrap
 						input.input__area(type="email" name="email")
-				button.modal__item.modal__btn.btn.--md.--bg-blue Отправить
+				button.modal__item.modal__btn.btn.--md.--bg-blue.--mt
+					.btn__inner
+						.btn__lines #[div]#[div]#[div]
+						.btn__text Отправить
 
 	.modal.--sm.--bg-white#modal-order
-		.modal__close
+		.modal__close(data-fancybox-close="")
 		.modal__inner
 			.modal__title.h2 #[strong #[u Оформление заказа]]
 			.modal__wrap
-				.modal__item.modal__input.input.--md.--b-black.--phone.--required
+				.modal__item.modal__input.input.--md.--b-blue.--phone.--required
 					.input__title Ваш номер телефона
 					.input__wrap
 						.input__icon
 							<svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0.166504V4.3887V8.61093V12.8331H19V8.61093V4.3887V0.166504H0Z" fill="#F0F0F0"/><path d="M19 0.166748H0V12.8336H19V0.166748Z" fill="#0052B4"/><path d="M19 0.166748H0V4.38887H19V0.166748Z" fill="#F0F0F0"/><path d="M19 8.61121H0V12.8333H19V8.61121Z" fill="#D80027"/></svg>
-						input.input__area(type="tel" name="phone")
-				.modal__item.modal__input.input.--md.--b-black.--name.--required
+						.input__desc +7
+						input.input__area(type="tel" name="phone" placeholder="900 100 10 00")
+				.modal__item.modal__input.input.--md.--b-blue.--name.--required
 					.input__title Ваше имя
 					.input__wrap
 						input.input__area(type="text" name="name")
-				.modal__item.modal__input.input.--md.--b-black.--email.--required
+				.modal__item.modal__input.input.--md.--b-blue.--email.--required
 					.input__title Ваша электронная почта
 					.input__wrap
 						input.input__area(type="email" name="email")
-				button.modal__item.modal__btn.btn.--md.--bg-blue Отправить
+				button.modal__item.modal__btn.btn.--md.--bg-blue.--mt
+					.btn__inner
+						.btn__lines #[div]#[div]#[div]
+						.btn__text Отправить
 				.modal__desc Наш менеджер перезвонит для уточнения деталей
 
 	.modal.--sm.--bg-white#modal-auth
-		.modal__close
+		.modal__close(data-fancybox-close="")
 		.modal__inner
 			.modal__title.h2 #[strong #[u Вход в личный кабинет]]
 			.modal__wrap
 				.modal__auth.auth
 					.auth__list
 						.auth__item
-							.auth__item.modal__input.input.--md.--b-black.--phone.--required
+							.auth__input.modal__input.input.--md.--b-blue.--phone.--required
 								.input__title Ваш номер телефона
 								.input__wrap
 									.input__icon
 										<svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0.166504V4.3887V8.61093V12.8331H19V8.61093V4.3887V0.166504H0Z" fill="#F0F0F0"/><path d="M19 0.166748H0V12.8336H19V0.166748Z" fill="#0052B4"/><path d="M19 0.166748H0V4.38887H19V0.166748Z" fill="#F0F0F0"/><path d="M19 8.61121H0V12.8333H19V8.61121Z" fill="#D80027"/></svg>
-									input.input__area(type="tel" name="phone")
+									.input__desc +7
+									input.input__area(type="tel" name="phone" placeholder="900 100 10 00")
 							.auth__captcha
-							button.auth__btn.btn.--md.--bg-blue.--next Выслать код
-							.auth__link Нет аккаунта? #[a(href="") Зарегестрируйтесь]
+								<div class="g-recaptcha" data-sitekey="6LcBXmwbAAAAACDtX4ejfFZDWmH3bHN2jW1YrgAO"></div>
+							button.auth__btn.btn.--md.--bg-blue.--next
+								.btn__inner
+									.btn__lines #[div]#[div]#[div]
+									.btn__text Выслать код
+							.auth__link Нет аккаунта? #[a(href="javascript:;" class="toggle-modal" data-popup-toggle="#modal-reg") Зарегистрируйтесь]
 
 						.auth__item
-							.auth__item.modal__input.input.--md.--b-black.--code.--required
+							.auth__input.modal__input.input.--md.--b-blue.--code.--required
 								.input__title Введите код
 								.input__wrap
 									input.input__area(type="tel" name="code")
-							.auth__timer Времени осталось #[var 2:59]
+							.auth__timer Отправить повторно через #[var 02:59]
 							.auth__resend #[span Отправить код повторно]
-							button.auth__btn.btn.--md.--bg-blue.--submit Войти
+							button.auth__btn.btn.--md.--bg-blue.--submit
+								.btn__inner
+									.btn__lines #[div]#[div]#[div]
+									.btn__text Войти
 
 	.modal.--sm.--bg-white#modal-reg
-		.modal__close
+		.modal__close(data-fancybox-close="")
 		.modal__inner
 			.modal__title.h2 #[strong #[u Регистрация]]
 			.modal__wrap
-				.modal__item.modal__input.input.--md.--b-black.--phone.--required
+				.modal__item.modal__input.input.--md.--b-blue.--phone.--required
 					.input__title Ваш номер телефона
 					.input__wrap
 						.input__icon
 							<svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0.166504V4.3887V8.61093V12.8331H19V8.61093V4.3887V0.166504H0Z" fill="#F0F0F0"/><path d="M19 0.166748H0V12.8336H19V0.166748Z" fill="#0052B4"/><path d="M19 0.166748H0V4.38887H19V0.166748Z" fill="#F0F0F0"/><path d="M19 8.61121H0V12.8333H19V8.61121Z" fill="#D80027"/></svg>
-						input.input__area(type="tel" name="phone")
-				.modal__item.modal__input.input.--md.--b-black.--name.--required
+						.input__desc +7
+						input.input__area(type="tel" name="phone" placeholder="900 100 10 00")
+				.modal__item.modal__input.input.--md.--b-blue.--name.--required
 					.input__title Ваше имя
 					.input__wrap
 						input.input__area(type="text" name="name")
-				.modal__item.modal__input.input.--md.--b-black.--email.--required
+				.modal__item.modal__input.input.--md.--b-blue.--email.--required
 					.input__title Ваша электронная почта
 					.input__wrap
 						input.input__area(type="email" name="email")
-				.modal__item.modal__input.input.--md.--b-black.--date.--required
+				.modal__item.modal__input.input.--md.--b-blue.--date.--required
 					.input__title Дата рождения
 					.input__wrap
+						.input__icon
+							img(src="_/uploads/calendar.png" alt="")
 						input.input__area(type="text" name="date")
+						.input__date
 				.modal__captcha
-				button.modal__item.modal__btn.btn.--md.--bg-blue Выслать код
-				.modal__link #[a(href="") Вернуться ко входу]
+					<div class="g-recaptcha" data-sitekey="6LcBXmwbAAAAACDtX4ejfFZDWmH3bHN2jW1YrgAO"></div>
+				button.modal__item.modal__btn.btn.--md.--bg-blue
+					.btn__inner
+						.btn__lines #[div]#[div]#[div]
+						.btn__text Выслать код
+				.modal__link #[a(href="javascript:;" class="toggle-modal" data-popup-toggle="#modal-auth") Вернуться ко входу]
 
 	.modal.--sm.--bg-white#modal-thanks
-		.modal__close
+		.modal__close(data-fancybox-close="")
 		.modal__inner
 			.modal__title.h2 #[strong #[u Заявка принята]]
 			.modal__wrap
@@ -129,4 +153,7 @@ footer.footer.bgw
 					.thanks__icon
 						<svg width="161" height="161" viewBox="0 0 161 161" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M80.5 0C36.111 0 0 36.111 0 80.5C0 124.889 36.111 161 80.5 161C124.889 161 161 124.889 161 80.5C161 36.111 124.889 0 80.5 0ZM121.3 63.4407L77.6959 107.045C76.3878 108.353 74.6705 109.01 72.9531 109.01C71.2358 109.01 69.5185 108.353 68.2103 107.045L46.4083 85.2428C43.7853 82.6198 43.7853 78.3802 46.4083 75.7572C49.0312 73.1343 53.2709 73.1343 55.8938 75.7572L72.9531 92.8165L111.814 53.9551C114.437 51.3322 118.677 51.3322 121.3 53.9551C123.923 56.5781 123.923 60.8177 121.3 63.4407V63.4407Z" fill="#58B33E"/></svg>
 					.thanks__title Спасибо за заявку, мы вам перезвоним!
-					.thanks__btn.btn.--md.--bg-blue Закрыть
+					.thanks__btn.btn.--md.--bg-blue
+						.btn__inner
+							.btn__lines #[div]#[div]#[div]
+							.btn__text Закрыть

@@ -1,56 +1,54 @@
-"use strict";
+let $inputs = document.querySelectorAll('.input');
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+if ($inputs) {
+	$inputs.forEach(($input)=>{
+		let $area = $input.querySelector('.input__area');
 
-class Input {
-  constructor(element) {
-    _defineProperty(this, "elemName", 'input');
+		$area.addEventListener('focusin', ()=>{
+			$input.classList.add('--focus');
+			$input.classList.remove('--error');
+		});
 
-    _defineProperty(this, "classError", '--error');
+		$area.addEventListener('focusout', ()=>{
+			$input.classList.remove('--focus');
+		});
 
-    _defineProperty(this, "classNumber", '--number');
+		if ($input.classList.contains('--phone')) {
+			$($area).mask('000 000 00 00');
+		}
 
-    _defineProperty(this, "className", '--name');
+		if ($input.classList.contains('--code')) {
+			$($area).mask('0000');
+		}
 
-    _defineProperty(this, "classPhone", '--phone');
+		if ($input.classList.contains('--date')) {
+			$($area).mask('A0.B0.CD00', {
+				'translation': {
+					'A': {
+						pattern: /[0-3]/
+					},
+					'B': {
+						pattern: /[0-1]/
+					},
+					'C': {
+						pattern: /[1-2]/
+					},
+					'D': {
+						pattern: /[0,9]/
+					}
 
-    var input = element.querySelector('input');
+				}
+			});
 
-    if (element.classList.contains(this.classPhone)) {
-      input.addEventListener('focus', () => {
-      	if (input.value == '') {
-      		input.value = '+7 (';
-      	}
-      });
-      input.addEventListener('click', () => {
-      	if (input.value == '+7 (') {
-      		input.focus();
-      		input.setSelectionRange(input.value.length, input.value.length);
-      	}
-      });
-      input.addEventListener('blur', () => {
-      	if (input.value == '+7 (') {
-      		input.value = '';
-      	}
-      });
-    } else if (element.classList.contains(this.classNumber)) {
-      input.addEventListener('input', () => {
-        input.value = input.value.replace(/\D/, '');
-      });
-    } else if (element.classList.contains(this.className)) {
-      input.addEventListener('input', () => {
-        input.value = input.value.replace(/\d/, '');
-      });
-    }
+			let $icon = $input.querySelector('.input__icon');
 
-    input.addEventListener('focusin', () => {
-      element.classList.remove(this.classError);
-    });
-  }
+			$icon.addEventListener('click', ()=>{
+				$input.classList.toggle('--show-calendar')
+			});
 
+			let $date = $(document.querySelectorAll('.input__date'));
+
+			$($area).datepicker();		
+		}
+	});
 }
-
-var inputs = document.querySelectorAll('.input');
-inputs.forEach(input => {
-  new Input(input);
-});

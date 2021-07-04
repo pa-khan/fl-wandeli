@@ -11,11 +11,14 @@ block content
 		.case
 			.intro__wrap.row
 				.intro__content
-					.intro__title.h1 Увеличьте производительность резки плитки и камня #[strong в 2 раза], с помощью станков 1 класса #[strong Wandeli] с функцией высокоточной калибровки
+					.intro__title.h1 #[strong Увеличьте производительность резки плитки и камня #[br]#[u в 2 раза], с помощью станков 1 класса #[u Wandeli] #[br]с функцией высокоточной калибровки]
 					.intro__subtitle.h2 #[strong #[u Рассрочка на все виды станков. Гарантия 2 года.]]
 					.intro__text
-						p Рассрочка на все виды станков. Гарантия 2 года.
-					a.intro__btn.btn.--md.--bg-blue(href="") Получить консультацию
+						p #[strong Оставьте заявку на оформление заказа и получите подробную консультацию от специалиста #[br]+ видео от Ген. директора компании «Обзор и калибровка станка Wandeli»#[br]]
+					a.intro__btn.btn.--md.--bg-blue.--inline(href="javascript:;" data-src="#modal-consult" data-fancybox="")
+						.btn__inner
+							.btn__lines #[div]#[div]#[div]
+							.btn__text Получить консультацию
 			.intro__img-wrap
 				.intro__img
 					img(src="_/uploads/intro-img.png" alt="")
@@ -30,6 +33,8 @@ block content
 			.advantages__name Wandeli Shop
 			.advantages__title.h1 #[i Приобретая станок Wandeli вы получаете качество резки #[br]на уровне #[strong заводского края!]]
 			.advantages__subtitle.h1 #[i #[strong #[u Преимущества перед аналогами]]]
+			.advantages__icon
+				<svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.4755 14.445L24.6006 3.31968C24.8581 3.06237 25 2.71887 25 2.35262C25 1.98636 24.8581 1.64286 24.6006 1.38555L23.7815 0.566247C23.2478 0.0331213 22.3803 0.0331213 21.8474 0.566247L12.5052 9.90845L3.15262 0.555881C2.8951 0.298566 2.55181 0.156494 2.18575 0.156494C1.81929 0.156494 1.476 0.298566 1.21828 0.555881L0.399387 1.37518C0.141869 1.6327 0 1.97599 0 2.34225C0 2.70851 0.141869 3.052 0.399387 3.30931L11.5347 14.445C11.793 14.7029 12.1379 14.8446 12.5046 14.8438C12.8727 14.8446 13.2174 14.7029 13.4755 14.445Z" fill="#179BD7"/></svg>
 			.advantages__wrap.bgw
 				.advantages__list.row
 					.advantages__item.advantage
@@ -109,33 +114,37 @@ block content
 
 	.economy.bgw
 		.case
-			.economy__wrap.row
+			.economy__wrap
 				.economy__content
 					.economy__title.h1 #[i #[strong Хорошее оборудование #[u сэкономит ваше время,] сделает #[br]ваш рабочий процесс #[u максимально эффективным] #[br]и принесет #[u большую прибыль!]]]
-					a.economy__btn.btn.--md.--bg-blue(href="") Получить консультацию
-				.economy__img
-					img(src="_/uploads/economy-img.png" alt="")
-		.economy__bg.bg
-			img(src="_/uploads/economy-bg.png" alt="")
+					a.economy__btn.btn.--md.--bg-blue.--inline(href="javascript:;" data-src="#modal-consult" data-fancybox="")
+						.btn__inner
+							.btn__lines #[div]#[div]#[div]
+							.btn__text Получить консультацию
+			.economy__img
+				img(src="_/uploads/economy-img.png" alt="")
+			.economy__bg.bg
+				img(src="_/uploads/economy-bg.png" alt="")
 
-	.gallery
+	.gallery.bgw
 		.case
 			.gallery__title.h1 #[i Результат резки станками #[strong #[u Wandeli]]]
 			.gallery__sliders
 				.gallery__slider
-					.gallery__list
-						.gallery__item.bgw
-							.gallery__img.bg
-								img(src="_/uploads/tech-1.jpg" alt="")
-						.gallery__item.bgw
-							.gallery__img.bg
-								img(src="_/uploads/tech-2.jpg" alt="")
-						.gallery__item.bgw
-							.gallery__img.bg
-								img(src="_/uploads/tech-3.jpg" alt="")
-						.gallery__item.bgw
-							.gallery__img.bg
-								img(src="_/uploads/tech-4.jpg" alt="")
+					.gallery__wrap.swiper-container
+						.gallery__list.swiper-wrapper
+							a.gallery__item.bgw.swiper-slide(href="javascript:;" data-src="_/uploads/tech-1.jpg" data-fancybox="")
+								.gallery__img.bg
+									img(src="_/uploads/tech-1.jpg" alt="")
+							a.gallery__item.bgw.swiper-slide(href="javascript:;" data-src="_/uploads/tech-2.jpg" data-fancybox="")
+								.gallery__img.bg
+									img(src="_/uploads/tech-2.jpg" alt="")
+							a.gallery__item.bgw.swiper-slide(href="javascript:;" data-src="_/uploads/tech-3.jpg" data-fancybox="")
+								.gallery__img.bg
+									img(src="_/uploads/tech-3.jpg" alt="")
+							a.gallery__item.bgw.swiper-slide(href="javascript:;" data-src="_/uploads/tech-4.jpg" data-fancybox="")
+								.gallery__img.bg
+									img(src="_/uploads/tech-4.jpg" alt="")
 					.gallery__arrows
 						.gallery__arrow.arrow.--prev
 							<svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.11074 6.45372L7.34092 0.223657C7.48502 0.0794465 7.67737 0 7.88248 0C8.08758 0 8.27994 0.0794465 8.42403 0.223657L8.88284 0.682352C9.18139 0.981244 9.18139 1.46703 8.88284 1.76547L3.65121 6.9971L8.88865 12.2345C9.03274 12.3787 9.1123 12.571 9.1123 12.776C9.1123 12.9812 9.03274 13.1734 8.88865 13.3178L8.42984 13.7763C8.28563 13.9206 8.09339 14 7.88828 14C7.68318 14 7.49082 13.9206 7.34673 13.7763L1.11074 7.54059C0.966304 7.39592 0.886971 7.20277 0.887427 6.99744C0.886971 6.79131 0.966304 6.59827 1.11074 6.45372Z" fill="white"/></svg>
@@ -157,9 +166,9 @@ block content
 					img(src="_/uploads/about-img.png" alt="")
 				.about__content
 					.about__text
-						p Здравствуйте! #[br]Наша компания #[strong #[u ООО «Fortezzo»] является официальным представителем марки Wandeli на территории Российской Федерации, Республики Беларусь и Республики Казахстан. ]
+						p Здравствуйте! #[br]Наша компания #[strong #[u ООО «Fortezzo»]] является официальным представителем марки Wandeli на территории Российской Федерации, Республики Беларусь и Республики Казахстан. 
 						p Для нас важно чтобы наши покупатели решали потребности в своей ежедневной деятельности с минимальными трудозатратами и экономили своё время и нервы.  За счет преимуществ наших станков, производительность труда в сегменте резки плитки и камня #[strong #[u вырастает в 2 раза,]] соответственно #[strong #[u увеличивается прибыль.]]
-						p И ещё несколько слов о том, почему выбирают нас:
+						p.--mt И ещё несколько слов о том, почему выбирают нас:
 					.about__list.row
 						.about__item
 							.about__item-icon

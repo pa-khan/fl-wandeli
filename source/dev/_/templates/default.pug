@@ -13,9 +13,15 @@ html(lang="ru")
 		//- meta(name="msapplication-TileColor" content="#da532c")
 		//- meta(name="theme-color" content="#ffffff")
 		title=title
+		script(src="https://www.google.com/recaptcha/api.js" async="" defer="")
 	body
 		.wrap
 			link(rel="stylesheet" href="_/sys/css/style.css" + version)
+			script(src="_/sys/libs/jquery/dist/jquery.min.js" + version)
+			script(src="_/sys/libs/air-datepicker/dist/js/datepicker.min.js" + version)
+			script(src="_/sys/libs/air-datepicker/dist/js/datepicker.js" + version)
+			script(src="_/sys/libs/fancybox/dist/jquery.fancybox.min.js" + version)
+			script(src="_/sys/libs/jquery-mask-plugin/dist/jquery.mask.min.js" + version)
 			script(src="_/sys/js/common.js" + version)
 
 			+style('header', 'blocks')

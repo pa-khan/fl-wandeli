@@ -10,8 +10,8 @@ html, body {
 }
 
 body {
-  color: #000000;
-  font-size: 16px;
+  color: #363636;
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -37,14 +37,14 @@ li {
 }
 
 a {
-  color: #000000;
+  color: #363636;
   text-decoration: none;
   outline: none;
   transition: 0.3s;
   border-bottom: 1px solid transparent;
 }
 a:hover {
-  color: #000000;
+  color: #363636;
 }
 
 input, textarea, button {
@@ -61,7 +61,7 @@ strong {
 }
 
 i {
-  font-style: normal;
+  font-style: italic;
 }
 
 u {
@@ -89,6 +89,9 @@ path, circle, rect, line {
 .wrap {
   display: flex;
   flex-direction: column;
+  max-width: 1460px;
   min-height: 100%;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }

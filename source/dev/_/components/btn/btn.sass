@@ -10,9 +10,90 @@
 	cursor: pointer
 	font-size: $fzMain
 	font-family: $ffMain
-	overflow: hidden
 	border: none
 	background-color: transparent
 	transition: .3s
 	outline: none
 	border-bottom: none
+	&.--inline
+		display: inline-flex
+	&.--md
+		height: 42px
+		font-size: 12px
+		font-weight: 700
+		padding-left: 20px
+		padding-right: 20px
+	&.--bg-blue
+		color: #fff
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			border-radius: 5px
+			background-color: $blue
+			transform: skew(-30deg)
+		.btn
+			&__text
+				color: #fff
+			&__lines
+				div
+					border-radius: 5px
+					border: 1px solid $blue
+					transform: skew(-30deg)
+
+	&.--bg-white
+		color: $black
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			border-radius: 5px
+			background-color: #fff
+			transform: skew(-30deg)
+		.btn
+			&__text
+				color: $black
+			&__lines
+				div
+					border-radius: 5px
+					border: 1px solid #fff
+					transform: skew(-30deg)
+
+
+	&__lines
+		div
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			transition: .3s
+			&:nth-of-type(1)
+				opacity: 0.6
+				transition: .3s
+			&:nth-of-type(2)
+				opacity: 0.4
+				transition: .6s
+			&:nth-of-type(3)
+				opacity: 0.2
+				transition: .9s
+	&__text
+		position: relative
+		z-index: 5
+
+	&:hover
+		.btn
+			&__lines
+				div
+					&:nth-of-type(1)
+						transform: translate(11px, -4.5px) skew(-30deg)
+					&:nth-of-type(2)
+						transform: translate(20px, -9.5px) skew(-30deg)
+					&:nth-of-type(3)
+						transform: translate(28px, -13.5px) skew(-30deg)

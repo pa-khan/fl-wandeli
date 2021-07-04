@@ -11,3 +11,96 @@
 		&::placeholder
 			opacity: 0.5
 			color: #fff
+	&__icon
+		position: absolute
+		top: 50%
+		left: 14px
+		transform: translateY(-50%)
+	&__desc
+		position: absolute
+		top: 50%
+		left: 42px
+		transform: translateY(-50%)
+	&__date
+		top: 100%
+		left: 0
+		right: 0
+		margin-top: 3px
+		position: absolute
+		z-index: 5
+	&.--md
+		.input
+			&__title
+				margin-bottom: 10px
+			&__area
+				font-size: 18px
+				font-weight: 700
+				height: 57px
+				padding-left: 14px
+				padding-right: 14px
+	&.--b-white
+		.input
+			&__title
+				color: #fff
+			&__area
+				border: 1px solid #fff
+				border-radius: 10px
+				&::placeholder
+					opacity: 0.3
+					color: #fff
+			&__desc
+				color: #fff
+				font-weight: 700
+				font-size: 18px
+	&.--b-blue
+		.input
+			&__title
+				color: $black
+			&__area
+				color: $black
+				border: 1px solid $blue
+				border-radius: 10px
+				&::placeholder
+					opacity: 1
+					color: #D7D7D7
+			&__desc
+				color: $black
+				font-weight: 700
+				font-size: 18px
+	&.--b-black
+		.input
+			&__title
+				color: $black
+			&__area
+				color: $black
+				border: 1px solid $black
+				border-radius: 10px
+				&::placeholder
+					opacity: 1
+					color: #D7D7D7
+			&__desc
+				color: $black
+				font-weight: 700
+				font-size: 18px
+	&.--phone
+		.input
+			&__area
+				padding-left: 67px
+	&.--date
+		.input
+			&__icon
+				transform: none
+				top: 0
+				left: auto
+				right: -29px
+		&.--show-calendar
+			.input
+				&__date
+					.ui-datepicker
+						opacity: 1
+						visibility: visible
+						transform: translateY(0px)
+	&.--error
+		.input
+			&__area
+				border-color: #EB5757

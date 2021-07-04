@@ -6,7 +6,62 @@
 	&__area
 		width: 100%
 		font-family: $ffMain
-		color: $black
+		color: #fff
 		resize: none
+		background-color: transparent
 		&::placeholder
-			color: $black
+			opacity: 0.5
+			color: #fff
+	&__icon
+		position: absolute
+		top: 50%
+		left: 14px
+		transform: translateY(-50%)
+	&__desc
+		position: absolute
+		top: 50%
+		left: 42px
+		transform: translateY(-50%)
+	&.--md
+		.textarea
+			&__title
+				margin-bottom: 10px
+			&__area
+				font-size: 18px
+				font-weight: 700
+				height: 94px
+				padding-left: 14px
+				padding-right: 14px
+	&.--b-white
+		.textarea
+			&__title
+				color: #fff
+			&__area
+				border: 1px solid #fff
+				border-radius: 10px
+				&::placeholder
+					opacity: 0.3
+					color: #fff
+			&__desc
+				color: #fff
+				font-weight: 700
+				font-size: 18px
+	&.--b-blue
+		.textarea
+			&__title
+				color: $black
+			&__area
+				color: $black
+				border: 1px solid $blue
+				border-radius: 10px
+				&::placeholder
+					opacity: 1
+					color: #D7D7D7
+			&__desc
+				color: $black
+				font-weight: 700
+				font-size: 18px
+	&.--phone
+		.textarea
+			&__area
+				padding-left: 67px

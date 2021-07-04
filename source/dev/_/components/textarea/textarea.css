@@ -4,9 +4,69 @@
 .textarea__area {
   width: 100%;
   font-family: "Montserrat", sans-serif;
-  color: #000000;
+  color: #fff;
   resize: none;
+  background-color: transparent;
 }
 .textarea__area::placeholder {
-  color: #000000;
+  opacity: 0.5;
+  color: #fff;
+}
+.textarea__icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+}
+.textarea__desc {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+}
+.textarea.--md .textarea__title {
+  margin-bottom: 10px;
+}
+.textarea.--md .textarea__area {
+  font-size: 18px;
+  font-weight: 700;
+  height: 94px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.textarea.--b-white .textarea__title {
+  color: #fff;
+}
+.textarea.--b-white .textarea__area {
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.textarea.--b-white .textarea__area::placeholder {
+  opacity: 0.3;
+  color: #fff;
+}
+.textarea.--b-white .textarea__desc {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+.textarea.--b-blue .textarea__title {
+  color: #363636;
+}
+.textarea.--b-blue .textarea__area {
+  color: #363636;
+  border: 1px solid #179BD7;
+  border-radius: 10px;
+}
+.textarea.--b-blue .textarea__area::placeholder {
+  opacity: 1;
+  color: #D7D7D7;
+}
+.textarea.--b-blue .textarea__desc {
+  color: #363636;
+  font-weight: 700;
+  font-size: 18px;
+}
+.textarea.--phone .textarea__area {
+  padding-left: 67px;
 }
