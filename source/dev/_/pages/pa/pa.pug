@@ -41,8 +41,10 @@ block content
 								.btn__text Сохранить
 				.pa__loyalty.loyalty
 					.loyalty__title.h1 #[strong #[u Баллы лояльности]]
-					.loyalty__icon
-						img(src="_/uploads/ruble.svg" alt="")
-					.loyalty__desc На вашем счету:
-					.loyalty__value.h2 0 баллов = 0 Р
+					.loyalty__wrap
+						.loyalty__icon
+							img(src="_/uploads/ruble.svg" alt="")
+						.loyalty__text
+							.loyalty__desc На вашем счету:
+							.loyalty__value.h2 0 баллов = 0 Р
 					.pa__exit #[a(href="") Выйти]

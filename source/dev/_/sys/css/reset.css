@@ -89,7 +89,6 @@ path, circle, rect, line {
 .wrap {
   display: flex;
   flex-direction: column;
-  max-width: 1460px;
   min-height: 100%;
   overflow: hidden;
   margin-left: auto;

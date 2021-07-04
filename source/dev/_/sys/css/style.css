@@ -92,7 +92,6 @@ path, circle, rect, line {
 .wrap {
   display: flex;
   flex-direction: column;
-  max-width: 1460px;
   min-height: 100%;
   overflow: hidden;
   margin-left: auto;
@@ -563,6 +562,10 @@ path, circle, rect, line {
   overflow: hidden;
 }
 
+.br-hidden {
+  display: none;
+}
+
 .bgw {
   z-index: 1;
   position: relative;
@@ -612,6 +615,10 @@ path, circle, rect, line {
   transform: translateY(-50%);
 }
 
+.nav {
+  display: none;
+}
+
 .header {
   z-index: 100;
   padding-top: 42px;
@@ -619,6 +626,9 @@ path, circle, rect, line {
   top: 0;
   left: 0;
   right: 0;
+}
+.header__ham-wrap {
+  display: none;
 }
 .header__logo {
   margin-right: 40px;
@@ -678,6 +688,9 @@ path, circle, rect, line {
 }
 .header__phones p:last-of-type {
   margin-bottom: 0;
+}
+.header__call {
+  display: none;
 }
 
 .email {
@@ -752,6 +765,7 @@ path, circle, rect, line {
   line-height: 175px;
   font-weight: 700;
   color: #fff;
+  white-space: nowrap;
   text-shadow: 0 -2px 0 #179BD7, 0 -2px 0 #179BD7, 0 2px 0 #179BD7, 0 2px 0 #179BD7, -2px 0 0 #179BD7, 2px 0 0 #179BD7, -2px 0 0 #179BD7, 2px 0 0 #179BD7, -1px -2px 0 #179BD7, 1px -2px 0 #179BD7, -1px 2px 0 #179BD7, 1px 2px 0 #179BD7, -2px -1px 0 #179BD7, 2px -1px 0 #179BD7, -2px 1px 0 #179BD7, 2px 1px 0 #179BD7, -2px -2px 0 #179BD7, 2px -2px 0 #179BD7, -2px 2px 0 #179BD7, 2px 2px 0 #179BD7, -2px -2px 0 #179BD7, 2px -2px 0 #179BD7, -2px 2px 0 #179BD7, 2px 2px 0 #179BD7;
 }
 .advantages__title {
@@ -989,6 +1003,9 @@ path, circle, rect, line {
   margin-left: 12px;
   margin-right: 12px;
 }
+.catalog__arrow {
+  display: none;
+}
 
 .about {
   padding-top: 100px;
@@ -1008,10 +1025,12 @@ path, circle, rect, line {
   left: -135px;
 }
 .about__content {
-  z-index: 2;
-  position: relative;
   padding-left: 320px;
   padding-bottom: 10px;
+}
+.about__text {
+  z-index: 2;
+  position: relative;
 }
 .about__text u {
   color: #179BD7;
@@ -1026,6 +1045,8 @@ path, circle, rect, line {
   margin-bottom: 0;
 }
 .about__list {
+  z-index: 2;
+  position: relative;
   padding-left: 170px;
   padding-right: 60px;
   margin-top: 75px;
@@ -1057,6 +1078,9 @@ path, circle, rect, line {
   font-weight: 700;
   margin-left: -70px;
   margin-right: -70px;
+}
+.about__contacts, .about__subtitle {
+  display: none;
 }
 .about__foot {
   padding-top: 6px;
@@ -1378,6 +1402,9 @@ path, circle, rect, line {
 .data__item:nth-of-type(even) {
   background: #F7F7F7;
 }
+.data__item:last-of-type {
+  margin-bottom: 0;
+}
 .data__col {
   padding: 0 10px;
   width: 50%;
@@ -1397,6 +1424,12 @@ path, circle, rect, line {
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 420px;
+}
+.deli-intro__text strong {
+  color: #6B6B6B;
+}
+.deli-intro__text u {
+  color: #179BD7;
 }
 .deli-intro__img {
   position: absolute;
@@ -1462,6 +1495,7 @@ path, circle, rect, line {
   margin-left: 12px;
   position: relative;
   top: 3px;
+  white-space: nowrap;
 }
 
 .desc {
